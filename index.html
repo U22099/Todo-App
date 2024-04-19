@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <div id="app" class="app">
+      <div class="header">
+        <input id="input" type="text" placeholder="Add new task">
+        <button class="btn"  id="btn">+</button>
+      </div>
+      <hr>
+      <div class="body">
+        <div class="head">
+          <h1>List</h1>
+          <button id="clr">clear</button>
+        </div>
+        <ul class="list-body" id="list-body">
+          
+        </ul>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

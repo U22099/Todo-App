@@ -1,0 +1,137 @@
+body{
+  margin: 0px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.app{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  height: 89dvh;
+  width: 70dvw;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+  gap: 10px;
+  margin: auto;
+  margin-top: 5px;
+}
+.app > .header{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 5px;
+  width: 100%;
+}
+.app > .header input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+  height: 30px;
+  font-size: 2em;
+}
+.app > .header button{
+  background: none;
+  border: 3px dashed black;
+  color: black;
+  font-size: 2em;
+  border-radius: 5px;
+  cursor: pointer
+}
+hr{
+  width: 100%;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+.body{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding: 20px;
+  background: black;
+  border-radius: 10px;
+  color: white;
+}
+.head{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.5px solid white;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+}
+.head h1{
+  margin: 0px;
+}
+ul{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  height: max-content;
+  max-height: -webkit-fill-available;
+  border-radius: 5px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+ul::-webkit-scrollbar{
+  width: 5px;
+  border-radius: 20px
+}
+ul::-webkit-scrollbar-track{
+  background: black;
+  border-radius: 20px;
+}
+ul::-webkit-scrollbar-thumb{
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.head button{
+  width: 100px;
+  font-size: 2em;
+  background: none;
+  border: 3px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+}
+li{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr;
+  grid-gap: 10px;
+}
+li input{
+  font-size: 2em;
+}
+li label{
+  font-size: 2.4em;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+li button{
+  border-radius: 10px;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+@media (max-width: 615px){
+  .app{
+    width: 80vw;
+    padding: 20px;
+  }
+  .app > .header input{
+    font-size: 1em;
+  }
+  li label{
+    font-size: 1.5em;
+  }
+}
